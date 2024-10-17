@@ -168,6 +168,8 @@ section{
     align-items: center;
     transform: translateY(80px);
     margin-bottom: 12px;
+    gap: 10px; /* Add spacing between buttons */
+    
 }
 
 .slider-navigation .nav-btn{
@@ -190,6 +192,22 @@ section{
 
 .slider-navigation .nav-btn:hover{
     transform: scale(1.2);
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+/* Class to trigger the fade-out animation */
+.nav-btn.fade-out {
+    animation: fadeOut 0.5s forwards;
 }
 
 .video-slide{

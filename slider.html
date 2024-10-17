@@ -64,7 +64,7 @@
                         his journey.
                         </p>
                     </div>
-                    <button>See More</button>
+                    
                 </div>
             </div>
             <div class="item" style="background-image: url('./Images/Sakura.jpg'); ">
@@ -79,7 +79,7 @@
                            her team.
                         </p>
                     </div>
-                    <button>See More</button>
+                    
                 </div>
             </div>
             <div class="item" style="background-image: url('./Images/Itachi.jpg');">
@@ -92,14 +92,14 @@
                        </p>
                 
                 </div>
-                    <button>See More</button>
+                  
                 </div>
             </div>
             <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
                 <div class="content">
                     <div class="name">Ireland</div>
                     <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                    <button>See More</button>
+                    
                 </div>
             </div>
 
@@ -108,7 +108,13 @@
         <div class="button">
             <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
             <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+            <button class="back" onclick="goBack()">back</button>
         </div>
+        <script>
+            function goBack() {
+              window.location.href = "index.html"; // Navigate to the homepage
+            }
+          </script>
 
     </div>
     <script src="slider.js"></script>  
